@@ -1,0 +1,73 @@
+Medicare vs. Medicaid: An Overview
+Medicare and Medicaid are U.S. government-sponsored programs designed to help cover health care costs for certain American citizens. Established in 1965 and funded by taxpayers, these two programs have similar-sounding names, which can trigger confusion about how they work and the coverage they provide.
+
+Medicare provides medical coverage for many people age 65 and older and those with a disability. Eligibility for Medicare has nothing to do with income level. Medicaid is designed for people of any age with limited income and is often a program of last resort for those without access to other resources.
+
+Medicare
+Medicare helps provide health care coverage to U.S. citizens who are 65 years of age or older, as well as people with certain disabilities. The four-part program includes:
+
+Part A: Hospitalization Coverage
+Medicare Part A provides hospitalization coverage to individuals 65 years or older, regardless of income. You or your spouse must have worked and paid Medicare taxes for at least 10 years to qualify.
+Most people don't pay a premium for Part A, but deductibles and coinsurance apply.
+
+Part B: Medical Insurance
+Those eligible for Medicare Part A also qualify for Part B, which covers medically necessary services and equipment. This includes doctor’s office visits, lab work, x-rays, wheelchairs, walkers, and outpatient surgeries, as well as preventive services such as disease screenings and flu shots.
+
+For 2024, the standard Part B premium is $174.70, up from $164.90 in 2023. This is generally deducted from Social Security or Railroad Retirement payments. Deductibles and coinsurance apply. Individuals whose modified adjusted gross income (MAGI) is more than $103,000 per year ($206,000 for a couple) are obligated to pay more for this program.
+
+Centers for Medicare and Medicaid Services. "2024 Medicare Parts A & B Premiums and Deductibles."
+
+Part C: Medicare Advantage Plans
+Individuals eligible for Medicare Part A and Part B are likewise eligible for Part C, also known as Medicare Advantage. Medicare Part C plans are offered by private companies approved by Medicare.
+
+In addition to providing coverage offered by Parts A and B, most Part C plans offer vision, hearing, and dental coverage. Some also provide prescription drug coverage. In that way, it functions much like the health maintenance organizations (HMOs) and preferred provider organizations (PPOs) through which many people receive medical services during their working years.
+
+Medicare Advantage can be beneficial for some, but can lead to higher out-of-pocket costs for others due to coinsurance, deductibles, and copays. Evaluate your health status along with the plan's structure and coverage to see if it's right for you.
+
+Part D: Prescription Drug Coverage
+Medicare Part D provides prescription drug coverage. Participants pay for Part D plans out of pocket and must pay monthly premiums, a yearly deductible, and copayments for certain prescriptions.
+
+Most Medicare Part C plans will not allow you to buy Part D if their plan has no prescription drug coverage.
+
+Medicaid
+Medicaid is a joint federal and state program that helps low-income Americans of all ages pay for the costs associated with medical and long-term custodial care.
+
+Children who need low-cost care but whose families earn too much to qualify for Medicaid are covered through the Children's Health Insurance Program (CHIP), which has its own set of rules and requirements.
+
+Medicaid Eligibility and Costs
+The partnership between the federal and state governments means there are different Medicaid programs in each state. Through the Affordable Care Act (ACA), signed into law in 2010, President Barack Obama attempted to expand health care coverage to more Americans.
+
+As a result, all legal residents and citizens of the United States with incomes 138% below the poverty line qualify for coverage in Medicaid participating states.
+
+While the ACA has worked to expand both federal funding and eligibility for Medicaid, the U.S. Supreme Court ruled that states are not required to participate in the expansion in order to receive their current level of Medicaid funding. As a result, many states have chosen not to expand funding levels and eligibility requirements.
+
+
+Those covered by Medicaid pay nothing for covered services.
+
+Unlike Medicare, which is available to nearly every American of 65 years and over, Medicaid has strict eligibility requirements that vary by state.
+
+For a state-by-state breakdown of eligibility requirements, visit Medicaid.gov.
+
+When Medicaid recipients reach age 65, they remain eligible for Medicaid and also become eligible for Medicare.
+
+At that time, Medicaid coverage may change based on the recipient's income. Higher-income individuals may find that Medicaid just pays their Medicare Part B premiums. Lower-income individuals may continue to receive full benefits.
+
+Medicaid benefits vary by state, but the Federal government mandates coverage for a variety of services, including:
+Inpatient hospital services
+Outpatient hospital services
+EPSDT: Early and Periodic Screening, Diagnostic, and Treatment Services
+Nursing Facility Services
+Home health services
+Physician services
+Rural health clinic services
+Federally qualified health center services
+Laboratory and X-ray services
+Family planning services
+Nurse Midwife services
+Certified Pediatric and Family Nurse Practitioner services
+Freestanding Birth Center services (when licensed or otherwise recognized by the state)
+Transportation to medical care
+Tobacco cessation counseling for pregnant women
+Each state also has the option of including additional benefits, such as prescription drug coverage, optometrist services, eyeglasses, medical transportation, physical therapy, prosthetic devices, dental services, and much more.
+
+Medicaid is also used to fund long-term care, which is not covered by Medicare or most private health insurance policies. In fact, Medicaid is the primary payer of long-term care across the nation and often covers the cost of nursing facilities for those who deplete their savings to pay for health care and have no other means to pay for nursing care
