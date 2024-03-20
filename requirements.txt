@@ -1,6 +1,7 @@
 langchain
 langchain_openai
-pymongo
+#pymongo
+qdrant_client
 bs4
 openai
 tiktoken
@@ -9,6 +10,6 @@ requests
 lxml
 argparse
 unstructured
-langchain_mongodb
+#langchain_mongodb
 langchain_experimental
 python-dotenv

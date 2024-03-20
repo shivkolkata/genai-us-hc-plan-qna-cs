@@ -1,7 +1,8 @@
-from pymongo import MongoClient
+from qdrant_client import QdrantClient
 from langchain_openai import OpenAIEmbeddings
-from langchain_mongodb import MongoDBAtlasVectorSearch
-from langchain_community.document_loaders import DirectoryLoader
+#from langchain_mongodb import MongoDBAtlasVectorSearch
+#from langchain_community.document_loaders import DirectoryLoader
+from langchain_community.vectorstores import Qdrant
 from langchain_openai import OpenAI
 from langchain.chains import RetrievalQA
 ###from langchain.chains import RetrievalQAWithSourcesChain
@@ -13,14 +14,14 @@ import os
 
 load_dotenv() # take env variables from .env file
 
-### START -- Mongo DB Cloud database connection
-mongo_url = os.getenv("mongo_url")
-print("mongo_url=", mongo_url)
-client = MongoClient(mongo_url)
-dbName = "rag_qna"
-collectionName = "collection_of_text_blobs_with_chunks"
-collection = client[dbName][collectionName]
-### END -- Mongo DB Cloud database connection
+# create the qdrant client for connecting to vector db
+qdrant_url = os.getenv("qdrant_url")
+print("qdrant_url : ", qdrant_url)
+qdrant_client = QdrantClient(url=qdrant_url)
+print("Qdrant Client created successfully")
+
+# create the collection
+collectionName = "collection_of_text_blobs_with_chunks_CS"
 
 ### START -- create openai embeddings
 openai_api_key = os.getenv("openai_api_key")
@@ -28,24 +29,33 @@ embeddings = OpenAIEmbeddings(openai_api_key=openai_api_key)
 ### END -- create openai embeddings
 
 ### START -- create the vector store
-vectorStore = MongoDBAtlasVectorSearch(collection, embeddings , index_name="rag_qna_vector_index_chunks")
+#vectorStore = MongoDBAtlasVectorSearch(collection, embeddings , index_name="rag_qna_vector_index_chunks")
+vectorStore = Qdrant(
+    embeddings = embeddings,
+    client=qdrant_client,
+    collection_name=collectionName
+)
 ### END -- create the vector store
 
 def query_data(query):
-    ###print(query)
+    print("query = ",query)
     ### Search the vector store with the query
-    docs = vectorStore.similarity_search(query, K=1)
-    ### print(docs)
+    docs = vectorStore.similarity_search(query, k=1)
+    print("Length of docs-->",len(docs))
     ### Get the first and the most relevant search result
     as_output = docs[0].page_content
     llm = OpenAI(openai_api_key=openai_api_key,temperature = 0, max_tokens=2048)
+    print("llm created")
     retriever = vectorStore.as_retriever()
+    print("retriever created")
     ###chain_type_kwargs = {"prompt": query}
 
     ###qa = RetrievalQAWithSourcesChain.from_chain_type(llm, chain_type="stuff", retriever = retriever, verbose=True,reduce_k_below_max_tokens=True)
 
     qa = RetrievalQA.from_chain_type(llm, chain_type="stuff", retriever = retriever)
+    print("attempting to start the query")
     retriever_output = qa.invoke(query)
+    print("answer received")
     return as_output, retriever_output
 
 with gr.Blocks(theme=gr.themes.Soft(),title="Question Answering App using MongoDB Atlas Vector Search and RAG (Ask about Medicare advantage plan)") as demo:

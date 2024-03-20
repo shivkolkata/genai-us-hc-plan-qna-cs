@@ -6,7 +6,7 @@
 
 2. Install packages - pip install -r requirements.txt
 
-3. Enter openai_api_key and mongo_url in .env file (.env file need to be created)
+3. Enter openai_api_key and qdrant_url in .env file (.env file need to be created)
 
 4. Load Data, Convert to embeddings and insert into Mongo DB - python load_data.py
 
