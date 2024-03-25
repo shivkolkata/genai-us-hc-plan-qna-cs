@@ -56,20 +56,22 @@ def query_data(query):
     print("attempting to start the query")
     retriever_output = qa.invoke(query)
     print("answer received")
-    return as_output, retriever_output
+    #return as_output, retriever_output['result']
+    return retriever_output['result']
 
-with gr.Blocks(theme=gr.themes.Soft(),title="Question Answering App using MongoDB Atlas Vector Search and RAG (Ask about Medicare advantage plan)") as demo:
+with gr.Blocks(theme=gr.themes.Soft(),title="Q&A App : Medicare vs Medicaid (Built on Closed Source)") as demo:
     gr.Markdown(
         """
-        # Question Answering App using MongoDB Atlas Vector Search and RAG (Ask about Medicare advantage plan)
+        # Q&A App : Medicare vs Medicaid (Built on Closed Source)
         """)
     textbox = gr.Textbox(label="Enter your question", value="What is Medicare advantage ?")
     with gr.Row():
         button = gr.Button("Submit", variant="Primary")
     with gr.Column():
-        output1 = gr.Textbox(lines=1, max_lines=10, label="Raw Vector Search output")   
+        #output1 = gr.Textbox(lines=1, max_lines=10, label="Raw Vector Search output")   
         output2 = gr.Textbox(lines=1, max_lines=10, label="LLM output")
-    button.click(query_data, textbox, outputs=[output1, output2])
+    #button.click(query_data, textbox, outputs=[output1, output2])
+    button.click(query_data, textbox, outputs=[output2])
 demo.launch(share=True)
 
 
